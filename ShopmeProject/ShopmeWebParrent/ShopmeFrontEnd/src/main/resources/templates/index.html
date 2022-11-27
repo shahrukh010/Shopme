@@ -53,7 +53,8 @@
 		<div class="row" style="padding-top: 30px">
 			<div class="col" th:each="cat : ${listCategories}">
 				<div>
-					<img th:src="@{${cat.imagePath}}" width="140" />
+					<a> <img th:src="@{${cat.imagePath}}" width="140" />
+					</a>
 				</div>
 				<div>
 					<a th:href="@{'/c/' + ${cat.alias}}">[[${cat.name}]]</a>
