@@ -35,6 +35,7 @@
 	<build>
 		<plugins>
 			<plugin>
+<!-- 			maven install given error so code dependency skip all test cases and build -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0-M4</version>
