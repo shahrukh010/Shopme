@@ -82,9 +82,9 @@ public class CategoriesController {
 	public String newCategories(Model model) {
 
 		List<Categories> listCategories = service.listCategoriesUsedInForm();
-		model.addAttribute("pageTitle", "Create New Category");
 		model.addAttribute("category", new Categories());
 		model.addAttribute("listCategories", listCategories);
+		model.addAttribute("pageTitle", "Create New Category");
 
 		return "/categories/category_form";
 	}

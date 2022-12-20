@@ -17,7 +17,7 @@ import com.shopme.common.exception.ProductNotFoundException;
 @Service
 public class ProductService {
 
-	public static final int PRODUCT_PER_PAGE = 4;
+	public static final int PRODUCT_PER_PAGE = 10;
 	@Autowired
 	private ProductRepository productRepository;
 

@@ -128,7 +128,8 @@ public class BrandController {
 			brand.setLogo(fileName);
 			Brand saveBrand = service.save(brand);
 
-			String uploadDir = "../product-images/brand-image" + saveBrand.getId();
+			String uploadDir = "../product-images/brand-image/" + saveBrand.getId();
+
 			FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
 		} else {
 			service.save(brand);

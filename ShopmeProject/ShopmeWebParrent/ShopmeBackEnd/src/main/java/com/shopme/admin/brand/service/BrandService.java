@@ -21,7 +21,7 @@ public class BrandService {
 	@Autowired
 	private CategoriesRepository categoriesRepository;
 
-	public static final int BRAND_PER_PAGE = 4;
+	public static final int BRAND_PER_PAGE = 10;
 
 	public Page<Brand> listByPage(int pageNum, String sortField, String sortDir) {
 

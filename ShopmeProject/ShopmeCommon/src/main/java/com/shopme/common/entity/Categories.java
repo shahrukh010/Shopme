@@ -53,10 +53,6 @@ public class Categories {
 	public Categories() {
 	}
 
-	public Categories(int id) {
-
-		this.id = id;
-	}
 
 	public Categories(String name, Categories parent) {
 
@@ -69,6 +65,10 @@ public class Categories {
 		this.alias = name;
 		this.images = "default.png";
 
+	}
+	
+	public Categories(int id) {
+		this.id = id;
 	}
 
 	public Categories(Integer id) {
@@ -85,7 +85,7 @@ public class Categories {
 		return copyCategories;
 	}
 
-	public static Categories copyIdAndName(Integer id, String name) {
+	public static Categories copyIdAndName(int id, String name) {
 
 		Categories copyCategories = new Categories();
 		copyCategories.setId(id);
@@ -131,11 +131,11 @@ public class Categories {
 		return children;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -150,6 +150,9 @@ public class Categories {
 	public String getAlias() {
 		return alias;
 	}
+	
+	
+
 
 	public void setAlias(String alias) {
 		this.alias = alias;
